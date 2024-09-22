@@ -39,7 +39,7 @@ Once the page is loaded in the browser, you can interact with the chatbot via th
 1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey).
 2. Navigate to the API key section and create a new API key.
 
-Your API key will look something like this: AIzaSyAtpnKGX13bTgmx0l_gQeatYvdWvY_wOTQ
+
 
 **Note:** The API is free but has a limited number of usage requests.
 
