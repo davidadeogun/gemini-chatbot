@@ -59,8 +59,12 @@ Once the page is loaded in the browser, you can interact with the chatbot via th
 - HTML: For structuring the chatbot’s interface.
 - CSS: For styling the interface and making it responsive.
 - JavaScript: For handling logic, API requests, and interactions.
+- Express.js: For setting up the backend server and routing API requests
 - Gemini Model API: For natural language processing and conversation handling.
 - Firebase: For deployment and hosting
+- CORS: To enable cross-origin requests between the frontend and backend.
+- dotenv; For managing environment variables securely
+- node-fetch: For making HTTP requests from the backend. 
 
 ### Customization
 Feel free to customize the chatbot by editing the following:
