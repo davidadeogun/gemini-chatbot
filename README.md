@@ -61,7 +61,7 @@ Once the page is loaded in the browser, you can interact with the chatbot via th
 - JavaScript: For handling logic, API requests, and interactions.
 - Express.js: For setting up the backend server and routing API requests
 - Gemini Model API: For natural language processing and conversation handling.
-- Firebase: For deployment and hosting
+- Heroku: For deployment and hosting
 - CORS: To enable cross-origin requests between the frontend and backend.
 - dotenv; For managing environment variables securely
 - node-fetch: For making HTTP requests from the backend. 
