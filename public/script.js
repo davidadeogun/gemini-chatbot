@@ -58,13 +58,18 @@ const showTypingEffect = (text, textElement, incomingMessageDiv) => {
 const generateAPIResponse = async (incomingMessageDiv) => {
   const textElement = incomingMessageDiv.querySelector(".text"); // Getting text element
 
-  try {
-    // Send a POST request to the server API with the user's message
-    const response = await fetch('http://localhost:3000/api/generate-content', {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userMessage }),
-    });
+   // Determine the base URL dynamically
+   const baseURL = window.location.hostname === "localhost"
+   ? "http://localhost:3000"
+   : "https://ab-gemini-chatbot-470b5bbd5963.herokuapp.com";
+
+ try {
+   // Send a POST request to the server API with the user's message
+   const response = await fetch(`${baseURL}/api/generate-content`, {
+     method: "POST",
+     headers: { "Content-Type": "application/json" },
+     body: JSON.stringify({ userMessage }),
+   });
 
     const data = await response.json();
     if (!response.ok) throw new Error(data.error.message);
